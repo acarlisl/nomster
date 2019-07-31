@@ -1,5 +1,8 @@
 <!-- Index HTML file -->
 
+<!-- Paginate our places collection -->
+<%= will_paginate @places, class: 'digg_pagination' %>
+
 <!-- Stub: List out the entries in the database -->
 <% @places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
