@@ -75,3 +75,6 @@ end
 ## Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate', '~> 3.1.1'
 gem 'will_paginate-bootstrap'
+
+# SimpleForm
+gem 'simple_form'
