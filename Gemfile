@@ -78,3 +78,6 @@ gem 'will_paginate-bootstrap'
 
 # SimpleForm
 gem 'simple_form'
+
+# Font Awesome (used for icons)
+gem "font-awesome-rails"
