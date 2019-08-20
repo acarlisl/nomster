@@ -84,3 +84,9 @@ gem "font-awesome-rails"
 
 # Devise for user authentication
 gem 'devise'
+
+# Geocoder
+gem "geocoder"
+
+# Figaro: securely store environmental variables
+gem "figaro"
