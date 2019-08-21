@@ -6,4 +6,6 @@ class User < ApplicationRecord
 
   # Create an association; each user can create many places
   has_many :places
+  # Users can ahve multiple comments
+  has_many :comments
 end

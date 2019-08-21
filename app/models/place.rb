@@ -5,6 +5,9 @@ class Place < ApplicationRecord
 
   # Create an association; each place is created by 1 user
   belongs_to :user
+  # A place can have multiple comments
+  has_many :comments
+
   geocoded_by :address
   after_validation :geocode
 
