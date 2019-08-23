@@ -8,4 +8,6 @@ class User < ApplicationRecord
   has_many :places
   # Users can ahve multiple comments
   has_many :comments
+  # Users can have many photos
+  has_many :photos
 end

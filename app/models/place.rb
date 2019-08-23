@@ -7,6 +7,8 @@ class Place < ApplicationRecord
   belongs_to :user
   # A place can have multiple comments
   has_many :comments
+  # A place can have multiple photos
+  has_many :photos
 
   geocoded_by :address
   after_validation :geocode
