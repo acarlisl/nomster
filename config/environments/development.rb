@@ -2,15 +2,22 @@ Rails.application.configure do
   # Configure action mailer to use gmail to send outgoing mail
   config.action_mailer.delivery_method = :test
 
-  config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 587,
-    domain: "example.com",
-    authentication: "plain",
-    enable_starttls_auto: true,
-    user_name: ENV['GMAIL_ADDRESS'],
-    password: ENV['GMAIL_PASSWORD']
-  }
+  ########################################################################
+  ### Test environament with live emails. Note that this does not      ###
+  ### work as currently configured!                                    ###
+  ########################################################################
+  # config.action_mailer.delivery_method = :smtp
+  
+  # config.action_mailer.smtp_settings = {
+  #   address: "smtp.gmail.com",
+  #   port: 587,
+  #   domain: "example.com",
+  #   authentication: "plain",
+  #   enable_starttls_auto: true,
+  #   user_name: ENV['GMAIL_ADDRESS'],
+  #   password: ENV['GMAIL_PASSWORD']
+  # }
+  ########################################################################
 
   # Configure action mailer to the correct port (for Devise)
   config.action_mailer.default_url_options = { host: 'localhost:3030' }
