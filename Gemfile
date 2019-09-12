@@ -90,3 +90,8 @@ gem "geocoder"
 
 # Figaro: securely store environmental variables
 gem "figaro"
+
+# CarrierWave: simple and flexible way to upload files
+# Note: although this gem has version 2.0 available, 1.0 was used to ensure
+# compatibility with other gems in this project
+gem 'carrierwave', '~> 1.0'
