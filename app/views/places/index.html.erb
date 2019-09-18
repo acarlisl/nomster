@@ -3,6 +3,43 @@
 <!-- Paginate our places collection -->
 <%= will_paginate @places, class: 'digg_pagination' %>
 
+<!-- Homepage Image Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <%= image_tag 'Area_51.jpg', class: 'd-block img-fluid' %>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Aliens and more...</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'Prison.jpg', class: 'd-block img-fluid' %>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Which cell block has the best EATS?</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'Chuck_e_Cheese.jpg', class: 'd-block img-fluid' %>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Cosmic Horrors await!</h3>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
 <!-- Stub: List out the entries in the database -->
 <% @places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
