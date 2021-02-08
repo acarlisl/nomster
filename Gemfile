@@ -94,7 +94,7 @@ gem "figaro"
 # CarrierWave: simple and flexible way to upload files
 # Note: although this gem has version 2.0 available, 1.0 was used to ensure
 # compatibility with other gems in this project
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 
 # Amazon web service fog gem to handle credentials with AWS
 gem 'fog-aws'
